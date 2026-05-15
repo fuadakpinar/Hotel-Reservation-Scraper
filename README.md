@@ -60,7 +60,7 @@ Hotel-Reservation-Scraper/
 
 ```bash
 git clone https://github.com/fuadakpinar/Hotel-Reservation-Scraper.git
-cd hotel-reservation-scraper
+cd Hotel-Reservation-Scraper
 
 python3 -m venv .venv
 source .venv/bin/activate
