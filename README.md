@@ -29,7 +29,7 @@ backend.
 ## Project structure
 
 ```
-hotel-reservation-scraper/
+Hotel-Reservation-Scraper/
 ├── README.md
 ├── LICENSE
 ├── requirements.txt
@@ -59,7 +59,7 @@ hotel-reservation-scraper/
 ## Setup
 
 ```bash
-git clone https://github.com/fuadakpinar/hotel-reservation-scraper.git
+git clone https://github.com/fuadakpinar/Hotel-Reservation-Scraper.git
 cd hotel-reservation-scraper
 
 python3 -m venv .venv
