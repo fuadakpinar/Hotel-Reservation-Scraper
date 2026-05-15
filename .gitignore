@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Secrets and local config
+.env
+config.yaml
+
+# Scraper output
+output/
+!output/.gitkeep
+*.log
+
+# IDE / editor
+.vs/
+.vscode/
+.idea/
+*.suo
+*.pyproj.user
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Selenium / driver logs
+geckodriver.log
+chromedriver.log

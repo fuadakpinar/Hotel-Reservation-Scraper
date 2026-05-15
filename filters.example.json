@@ -1,0 +1,13 @@
+{
+  "begin_checkin": "01.06.2024",
+  "end_checkin": "31.08.2024",
+  "begin_checkout": "",
+  "end_checkout": "",
+  "begin_confirm": "",
+  "end_confirm": "",
+  "voucher_no": "",
+  "reservation_status": "confirmed",
+  "reservation_type": "new",
+  "excluded_hotels": [],
+  "excluded_agencies": []
+}

@@ -1,0 +1,52 @@
+# Hotel Reservation Scraper — example configuration.
+#
+# Copy this file to `config.yaml` and fill in the values for the
+# reservation system you are targeting. URLs and selectors are intentionally
+# generic; replace them with the real ones for your environment.
+#
+# All file paths are relative to the working directory you run the scraper from.
+
+site:
+  base_url: "https://reservations.example.com"
+  login_path: "/Account/SignIn"
+  reservations_path: "/Reservation/List"
+
+selectors:
+  login:
+    username: "UserName"
+    password: "Password"
+
+  filters:
+    begin_checkin: "Filter_BeginCheckinDate"
+    begin_checkout: "Filter_BeginCheckoutDate"
+    end_checkin: "Filter_EndCheckinDate"
+    end_checkout: "Filter_EndCheckoutDate"
+    begin_confirm: "Filter_BeginConfirmDate"
+    end_confirm: "Filter_EndConfirmDate"
+    voucher_no: "VoucherNo"
+    reservation_status: "Filter_ReservationConfirmStatus"
+    reservation_type: "Filter_ReservationType"
+    submit: "btnFilter"
+    detail_button_class: "btnShowDetail"
+    hotels_dropdown: "#resSearchForm > div:nth-child(1) > div > button"
+    hotels_options: '//*[@id="resSearchForm"]/div[1]/div/ul/li'
+    agencies_dropdown: "#resSearchForm > div:nth-child(2) > div > button"
+    agencies_options: '//*[@id="resSearchForm"]/div[2]/div/ul/li'
+
+timeouts:
+  implicit_wait: 10
+  page_load: 30
+
+output:
+  directory: "output"
+  filename_template: "reservation_{voucher}.json"
+
+reservation_status_codes:
+  confirmed: "1"
+  pending: "2"
+  not_confirmed: "3"
+
+reservation_type_codes:
+  new: "1"
+  modified: "2"
+  canceled: "3"
